@@ -32,3 +32,23 @@ b)The type of a variable is determined at runtime, and it can change as the prog
 
 */
 
+
+// Memory 
+// Stack(primitive dataTypes)-> change in copy
+
+// Heap(non-primitive dataTypes)-> reference (change in actual value)
+
+let name="shobhit"
+let name2=name
+name2="rohit"
+console.log(name)
+console.log(name2)
+
+let user1={
+    email:"sk@g.com",
+    upi:"user@ybl"
+}
+let user2=user1
+user2.upi="abc@pnb"
+console.log(user1.upi)
+console.log(user2.upi)
